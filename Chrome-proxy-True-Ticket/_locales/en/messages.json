@@ -1,0 +1,14 @@
+{
+    "appName": {
+        "message": "TrueTicket"
+    },
+    "appDesc": {
+        "message": "Set proxy for Google Chrome browser"
+    },
+    "title": {
+        "message": "TrueTicket"
+    },
+    "proxy_helper_options" : {
+        "message": "TrueTicket Options"
+    }
+}

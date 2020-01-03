@@ -1,0 +1,73 @@
+﻿<meta name="google" value="notranslate" />
+<html>
+
+<head>
+    <title> tech support</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheets/chrome-bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/options.css" />
+    <script type="text/javascript" src="javascripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="javascripts/options.js"></script>
+
+</head>
+
+
+
+
+<body class="chrome-bootstrap">
+
+    <div id="div_password" align="center "
+        style="font-size: xx-large;margin: auto;width: 60%;border: 3px solid #73AD21;padding: 10px;box-sizing: border-box;margin-top: 5%;">
+        <label id="lbPassword">enter password</label><br>
+        <input name="myPass" id="myPass" type="password" autocomplete="off" />
+        <button type="button" id="btPassword">send</button>
+        <button type="button" id="btPassword2" hidden>send</button>
+    </div>
+
+    <div class="frame " id='body' hidden>
+        <div class="mainview view ">
+            <div id="general" class="selected">
+                <div class="content">
+                    <h2 data-i18n-content="get list">List URL</h2>
+                    <div class="view">
+                        <select id="URL_LIST" size="5" style="width: 50%" multiple>
+                        </select>
+                        <br><br>
+                    </div>
+                    <span style="font-size:x-large" id='select_label' hidden>selected item : </span><span
+                        style="font-size:large" id="selected_item"></span>
+                </div>
+
+                <div class="content ">
+                    <h2 data-i18n-content="get list">set Xpath</h2>
+                    <div class="view">
+                        <span style="color: rgba(158, 119, 60, 0.747);">example : //*[@class="<Class name>"]/text()
+                        </span><br>
+                        <span class="Xpath_label" data-i18n-content="Xpath" style="font-size:large">Xpath:</span>
+                        <input type="text" id="Xpath_input" size="50" maxlength="120" />
+                        <br>
+                        <span style="color: rgba(158, 119, 60, 0.747);"> ^today^-for instead of data , ^More3Day^-for
+                            instead of late data in format Y-M-D,<br>^TD^-for instead of day, ^TM^-for instead of month
+                            , ^TY^-for
+                            instead of year,<br>^MD^-for instead of later day, ^MM^-for instead of later month ,
+                            ^MY^-for instead of later year </span>
+                        <br>
+                        <span class="FullURL_label" data-i18n-content="FullURL" style="font-size:large">
+                            URL:&nbsp;&nbsp;&nbsp; </span>
+                        <input type="text" id="FullURL_input" size="50" maxlength="2000" />
+                        &nbsp;&nbsp;
+                        <button id="deleteURL" onClick="deleteURL()" class="btn  btn-outline-warning btn-sm"
+                            style="font-size:medium;">delete URL</button>
+                        <br>
+                        <button id="setXpath" class="btn  btn-outline-success" style="font-size:large;">accept</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

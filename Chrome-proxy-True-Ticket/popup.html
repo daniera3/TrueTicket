@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>TrueTicket</title>
+    <link href="stylesheets/popup.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="javascripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="javascripts/popup.js"></script>
+    <script type="text/javascript" src="javascripts/optionspopup.js"></script>
+</head>
+
+
+
+<body>
+    <p id="massge" align="center" style="font-size:large;margin: auto;margin-top: 5%;">
+    </p>
+    <ul>
+        <li id="CheckSite" title="this option check if this site Trustable">
+            <div class="menu">
+                <span id="check" class="text" data-i18n-content="CheckSite">Check Site</span>
+            </div>
+        </li>
+        <li id="auto-detect" title="Proxy configuration is determined by WPAD">
+            <div class="menu">
+                <span id="auto" class="text" data-i18n-content="auto_detect_set">ON</span>
+            </div>
+        </li>
+        <li id="sys-proxy" title="Use system's proxy settings">
+            <div class="menu">
+                <span id="system" class="text" data-i18n-content="system_proxy">off</span>
+            </div>
+        </li>
+    </ul>
+    <p hidden id="massge_off" align="center"
+        style="font-size:medium;margin: auto;border: 2px solid rgb(255, 0, 0);padding: 5px;box-sizing: border-box;margin-top: 5%;color: red;">
+        Don't forget to turn off
+    </p>
+</body>
+
+</html>

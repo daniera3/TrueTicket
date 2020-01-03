@@ -1,0 +1,50 @@
+{
+    "version": "1.2.7",
+    "manifest_version": 2,
+    "default_locale": "en",
+    "description": "True Ticket",
+    "name": "True Ticket",
+    "incognito": "spanning",
+    "icons": {
+        "128": "images/on.png",
+        "48":  "images/on48.png",
+        "16":  "images/on16.png"
+    },
+    "permissions": [
+        "management",
+        "proxy",
+        "tabs",
+        "unlimitedStorage",
+        "storage",
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking",
+        "cookies",
+        "http://*/*", 
+        "https://*/*"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+        "js":        ["javascripts/content_script.js"],
+        "matches":   ["<all_urls>"],
+        "run_at":    "document_start"
+        }
+    ],
+    "commands": {
+        "open-option": {
+          "suggested_key": {
+            "default": "Alt+L"},
+          "description": "Open supp page"
+        }
+    },
+    "browser_action": {
+        "default_icon": "images/off.png",
+        "default_title": "True Ticket",
+        "default_popup": "popup.html"
+    },
+    "minimum_chrome_version":"22.0.0"
+}
+
